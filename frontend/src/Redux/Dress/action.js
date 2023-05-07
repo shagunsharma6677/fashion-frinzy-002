@@ -5,7 +5,7 @@ export const getDress = (param) => async (dispatch) => {
   try {
     dispatch({ type: DRESS_DATA_LOADING });
     let res = await axios
-      .get("https://sleepy-pear-toga.cyclic.app/dress", param)
+      .get("https://fashion-frenzy-be.onrender.com/dress", param)
       .then((e) => {
         dispatch({ type: DRESS_DATA_SUCCESS, payload: e.data });
         return e.data;

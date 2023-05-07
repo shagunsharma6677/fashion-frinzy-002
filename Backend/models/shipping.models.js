@@ -14,7 +14,7 @@ const shippingSchema = mongoose.Schema(
     }
 );
 
-const shippingAddress = mongoose.model("Address", shippingSchema);
+const shippingAddress = mongoose.model("address", shippingSchema);
 
 module.exports = {
   shippingAddress,

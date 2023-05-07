@@ -29,7 +29,7 @@ export const deldatasuccess = () => {
 export const postRequestAddress = (payload) => (dispatch) => {
   dispatch(getpostRequest());
   axios
-    .post("https://sleepy-pear-toga.cyclic.app/address/add", payload)
+    .post("https://fashion-frenzy-be.onrender.com/address/add", payload)
     .then((res) => {
       console.log("post", res.data);
       dispatch(getpostSuccessAddress(res.data));

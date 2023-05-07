@@ -6,7 +6,6 @@ const adminSchema = mongoose.Schema(
     title: String,
     price: Number,
     rating: Number,
-   
   },
   {
     versionKey: false,
